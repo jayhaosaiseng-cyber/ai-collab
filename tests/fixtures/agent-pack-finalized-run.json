@@ -1,0 +1,37 @@
+{
+  "id": "11111111-2222-4333-8444-555555555555",
+  "goal": "Design a front-desk lead intake agent.",
+  "currentQuestion": "Design a front-desk lead intake agent.",
+  "turnId": "turn-1",
+  "turns": [
+    {
+      "id": "turn-1",
+      "question": "Design a front-desk lead intake agent.",
+      "status": "completed"
+    }
+  ],
+  "status": "completed",
+  "models": {
+    "codex": "codex-test",
+    "claude": "claude-test",
+    "moderator": "gpt-6-sol"
+  },
+  "messages": [],
+  "final": {
+    "text": "=== FILE: system_instructions.md ===\nYou are the front-desk lead intake agent. Collect the visitor's name, reason, and urgency, then hand off to the right team.\n=== END FILE ===\n=== FILE: skills/lead-intake/SKILL.md ===\n# Lead intake\nAsk for name, contact, and reason for the visit. Do not promise an outcome.\n=== END FILE ===\n=== FILE: skills/follow-up/SKILL.md ===\n# Follow up\nSummarize the lead and the next action in one short note.\n=== END FILE ===\n",
+    "consensus": true,
+    "decided": true,
+    "approved": true,
+    "reviewed": true,
+    "partial": false,
+    "version": 2,
+    "author": "claude",
+    "moderation": {
+      "action": "finalize",
+      "reason": "Both reviewers approved.",
+      "remainingDisagreements": []
+    },
+    "reviews": [],
+    "unresolved": []
+  }
+}
